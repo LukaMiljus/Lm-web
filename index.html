@@ -9,6 +9,28 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+        <nav role='navigation'>
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="#about-me">
+                            <li>About Me</li>
+                        </a>
+                        <a href="#skillset">
+                            <li>My Skillset</li>
+                        </a>
+                        <a href="#projects">
+                            <li>My Projects</li>
+                        </a>
+                        <a href="#contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
     <div class="title-section">
         <div class="title">
             <img class="me" src="https://via.placeholder.com/150" alt="me">
@@ -20,14 +42,14 @@
     <div class="content">
          <div class="about">
                 <div class="about-txt">
-                <h1 class="content-title">About Me</h1>
+                <h1 id="about-me" class="content-title">About Me</h1>
                 <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga recusandae unde fugit similique cupiditate accusamus saepe quae deserunt praesentium voluptas? Animi quo sint, totam illo exercitationem ducimus aliquid vero adipisci!</p>
             </div>
         </div>
         <hr/>
         <div class="skills">
             <div class="skills-txt">
-            <h1 class="content-title">My Skillset</h1>
+            <h1 id="skillset" class="content-title">My Skillset</h1>
                 <ul>
                     <li><img src="https://img.icons8.com/color/96/000000/html-5.png"></li>
                     <li><img src="https://img.icons8.com/color/96/000000/css3.png"></li>
@@ -47,7 +69,7 @@
         <hr>
         <div class="projects">
             <div class="project-txt">
-                <h1 class="content-title">My Projects</h1>
+                <h1 id="projects" class="content-title">My Projects</h1>
                 <div class="project-section">
                         <div class="element">
                             <h2 class="project-title">Weather App</h2>
@@ -76,7 +98,7 @@
         <hr>
         <div class="contact">
             <div class="contact-txt">
-                <h1 class="content-title">Contact Me</h1>
+                <h1 id="contact" class="content-title">Contact Me</h1>
                   <div class="contact-elements">
                     <div class="contact-element">
                     <img src="https://img.icons8.com/nolan/96/email.png">
@@ -94,6 +116,10 @@
                 </div>
         </div>
         </div>
+
+    <div class="footer">
+        <h5>Luka Miljus &copy;</h5>
+    </div>
     </div>
     
 

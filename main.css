@@ -178,4 +178,17 @@ hr{
     padding: 0 30px 30px 30px; 
 }
 
+.contact-elements{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+}
 
+.contact-element{
+    width: 300px;
+}
+
+.contact-element h3{
+    color: white;
+}

@@ -1,5 +1,6 @@
 *{
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -76,7 +77,7 @@ a:hover {
 #menuToggle input:checked~span {
 	opacity: 1;
 	transform: rotate(45deg) translate(-2px, -1px);
-	background: #232323;
+	background: tomato;
 }
 
 #menuToggle input:checked~span:nth-last-child(3) {
@@ -121,9 +122,12 @@ a:hover {
 
 .me {
     border: 1px;
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 50%;
     height: 200px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
 .title{
@@ -134,6 +138,7 @@ a:hover {
    left: 50%;
    transform: translate(-50%, -50%); 
    width: 100%;
+  
 }
 
 .title span {
@@ -150,6 +155,7 @@ a:hover {
     background:#444444;
     position: relative;
     animation: text 2s 1;
+    margin-top: 20px;
 }
 
 .job {
@@ -175,6 +181,18 @@ a:hover {
     }
 }
 
+.backToTop{
+    z-index: 2;
+    position: fixed;
+    bottom:0;
+    right:0;
+    opacity: 0;
+}
+
+.backToTop:hover{
+    cursor: pointer;
+}
+
 .content{
     word-break: initial;
 }
@@ -189,6 +207,11 @@ a:hover {
 
 .about-txt{
     padding:30px;
+    font-size: 20px;
+}
+
+.txt{
+    opacity: 0;
 }
 
 .content-title{
@@ -221,6 +244,7 @@ hr{
     text-align: center;
     margin: 0;
     padding: 0;
+    opacity: 0;
 }
 
 .skills-txt ul p{
@@ -274,25 +298,35 @@ hr{
     padding: 0;
     height: auto;
     background: rgba(27, 27, 27, 0.808);
+    
 }
 
 .contact-txt{
     padding: 0 30px 30px 30px; 
+    opacity: 0;
 }
 
 .contact-elements{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
     text-align: center;
 }
 
 .contact-element{
-    width: 300px;
+    width: 200px;
+    
 }
 
 .contact-element h3{
     color: white;
+}
+
+#my-linkedIn:hover{
+    cursor: pointer;
+}
+
+#my-gitHub:hover{
+    cursor: pointer;
 }
 
 .footer{
